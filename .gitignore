@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Vector database
+vectorstore/
+*.sqlite3
+*.db
+
+# Chat logs
+chat_history/
+
+# Environment
+.env
+
+# Node
+node_modules/
+dist/
+build/
+
+# Models
+models/
+.cache/
+
+# OS
+.DS_Store
+Thumbs.db

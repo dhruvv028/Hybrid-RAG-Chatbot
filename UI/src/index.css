@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Clean and minimal design system with subtle colors */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 213 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 25% 12%;
+
+    --primary: 215 75% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 213 25% 12%;
+
+    --muted: 210 15% 97%;
+    --muted-foreground: 213 15% 45%;
+
+    --accent: 210 15% 97%;
+    --accent-foreground: 213 25% 12%;
+
+    --success: 142 70% 50%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 85% 55%;
+    --warning-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 215 75% 55%;
+
+    /* Subtle gradients */
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(210 15% 98%) 100%);
+    --gradient-header: linear-gradient(135deg, hsl(215 75% 55%) 0%, hsl(215 80% 60%) 100%);
+    
+    /* Chat specific colors */
+    --chat-user-bg: 215 75% 55%;
+    --chat-user-foreground: 0 0% 100%;
+    --chat-bot-bg: 210 15% 97%;
+    --chat-bot-foreground: 213 25% 12%;
+    
+    /* Sidebar minimal colors */
+    --sidebar-bg: 0 0% 100%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-active: 215 75% 55%;
+    --sidebar-active-foreground: 0 0% 100%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 25% 8%;
+    --foreground: 210 40% 98%;
+
+    --card: 213 25% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 213 25% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 215 75% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 215 25% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 215 25% 15%;
+    --accent-foreground: 210 40% 98%;
+
+    --success: 142 70% 55%;
+    --success-foreground: 0 0% 100%;
+
+    --warning: 45 85% 60%;
+    --warning-foreground: 213 25% 8%;
+
+    --destructive: 0 70% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 215 25% 20%;
+    --input: 215 25% 20%;
+    --ring: 215 75% 60%;
+
+    /* Subtle gradients - dark mode */
+    --gradient-subtle: linear-gradient(180deg, hsl(213 25% 8%) 0%, hsl(213 25% 10%) 100%);
+    --gradient-header: linear-gradient(135deg, hsl(215 75% 60%) 0%, hsl(215 80% 65%) 100%);
+
+    /* Chat specific colors - dark mode */
+    --chat-user-bg: 215 75% 60%;
+    --chat-user-foreground: 0 0% 100%;
+    --chat-bot-bg: 215 25% 15%;
+    --chat-bot-foreground: 210 40% 98%;
+    
+    /* Sidebar minimal colors - dark mode */
+    --sidebar-bg: 213 25% 10%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-active: 215 75% 60%;
+    --sidebar-active-foreground: 0 0% 100%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
