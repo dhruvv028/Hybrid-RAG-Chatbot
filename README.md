@@ -4,6 +4,16 @@ This project is a Retrieval-Augmented Generation (RAG) based chatbot that allows
 
 ---
 
+## Application Screenshots
+
+### Chat Interface
+![Chat UI](images/chat_ui.png)
+
+### Chat Response Example
+![Chat Response](images/chat_answer.png)
+
+---
+
 ## Architecture Overview
 
 The system works in two phases:
